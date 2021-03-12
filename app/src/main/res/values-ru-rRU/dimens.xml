@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--    menu-->
+    <dimen name="menu_text_size">15sp</dimen>
+    <dimen name="menu_drawable_padding_long_buttons">55dp</dimen>
+    <dimen name="menu_drawable_padding_short_buttons">20dp</dimen>
+    <dimen name="menu_image_height">275dp</dimen>
+
+    <!--quiz hello world-->
+    <dimen name="quiz_text_size_big_hello_world">18sp</dimen>
+    <dimen name="quiz_text_size_normal_hello_world">14sp</dimen>
+    <dimen name="quiz_text_size_small_hello_world">12sp</dimen>
+
+    <!--quiz find a match-->
+    <dimen name="quiz_text_size_big_find_a_match">14sp</dimen>
+    <dimen name="quiz_image_size_find_a_match">130dp</dimen>
+
+    <!--quiz shoot in foot-->
+    <dimen name="quiz_text_size_big_shooting_in_foot">18sp</dimen>
+
+    <dimen name="textSizeForSettings">24sp</dimen>
+</resources>

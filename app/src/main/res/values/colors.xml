@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="buttonBackgroundColorUnpressed">#6184E8</color>
+    <color name="buttonBackgroundColorPressed">#5079ED</color>
+
+    <color name="colorGold">#FFC107</color>
+    <color name="colorSilver">#979797</color>
+    <color name="colorBronze">#C69157</color>
+    <color name="colorRed">#D3443A</color>
+</resources>

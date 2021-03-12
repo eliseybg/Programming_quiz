@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Layouts.Menu">
+
+    <com.breaktime.programmingquiz.CustomView.MatrixEffect
+        android:id="@+id/matrixEffect"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/buttons_style_main_menu"
+        android:drawableLeft="@drawable/detect_language"
+        android:onClick="openHelloWorldQuiz"
+        android:paddingLeft="@dimen/menu_drawable_padding_long_buttons"
+        android:paddingRight="@dimen/menu_drawable_padding_long_buttons"
+        android:text="@string/detect_language"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/menu_text_size"
+        app:layout_constraintBottom_toTopOf="@+id/button5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/buttons_style_main_menu"
+        android:paddingLeft="@dimen/menu_drawable_padding_long_buttons"
+        android:paddingRight="@dimen/menu_drawable_padding_long_buttons"
+        android:text="@string/find_match"
+        android:drawableLeft="@drawable/gun_car"
+        android:onClick="openFindMatch"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/menu_text_size"
+        app:layout_constraintBottom_toTopOf="@+id/button6"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintStart_toStartOf="@+id/button" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:background="@drawable/buttons_style_main_menu"
+        android:drawableLeft="@drawable/foot"
+        android:onClick="openShootingInFeet"
+        android:paddingLeft="@dimen/menu_drawable_padding_long_buttons"
+        android:paddingRight="@dimen/menu_drawable_padding_long_buttons"
+        android:text="@string/shooting_in_foot"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/menu_text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/button5"
+        app:layout_constraintStart_toStartOf="@+id/button5"
+        app:layout_constraintTop_toTopOf="@+id/matrixEffect"
+        app:layout_constraintVertical_bias="0.8" />
+
+<!--    <Button-->
+<!--        android:id="@+id/button8"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:background="@drawable/buttons_style_main_menu"-->
+<!--        android:paddingLeft="@dimen/menu_drawable_padding_long_buttons"-->
+<!--        android:paddingRight="@dimen/menu_drawable_padding_long_buttons"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        android:text="@string/IT_communication"-->
+<!--        android:drawableLeft="@drawable/it_communication"-->
+<!--        android:textSize="@dimen/menu_text_size"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/button5"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/button5"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/button6" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/matrixEffect"
+        app:layout_constraintStart_toStartOf="@+id/matrixEffect"
+        app:layout_constraintTop_toBottomOf="@+id/button6">
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttons_style_main_menu"
+            android:drawableLeft="@drawable/settings"
+            android:onClick="openSettings"
+            android:paddingLeft="@dimen/menu_drawable_padding_short_buttons"
+            android:paddingRight="@dimen/menu_drawable_padding_short_buttons"
+            android:text="@string/settings"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/menu_text_size" />
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttons_style_main_menu"
+            android:drawableLeft="@drawable/about_us"
+            android:onClick="openAboutUs"
+            android:paddingLeft="@dimen/menu_drawable_padding_short_buttons"
+            android:paddingRight="@dimen/menu_drawable_padding_short_buttons"
+            android:text="@string/about_us"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/menu_text_size" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="309dp"
+        android:layout_height="@dimen/menu_image_height"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/matrixEffect"
+        app:srcCompat="@drawable/robot" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

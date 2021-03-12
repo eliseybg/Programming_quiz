@@ -1,0 +1,501 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#26292C"
+    tools:context=".Layouts.Settings">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:textColor="#5079ED"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="@string/settings"
+        android:textSize="36sp" />
+
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="3dp"
+        android:background="#11899B" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:textColor="#A1A1A1"
+                    android:text="@string/detect_language"
+                    android:textSize="30sp"
+                    android:textStyle="italic"
+                    app:fontFamily="sans-serif-condensed-medium" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider3"
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#A198A2A3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="#A1A1A1"
+                    android:text="@string/all_questions"
+                    android:textSize="@dimen/textSizeForSettings" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/switchAllQuestionsDetectLanguage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:checked="false"
+                    android:theme="@style/MySwitch" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="#A1A1A1"
+                    android:text="@string/time_for_answer"
+                    android:textSize="@dimen/textSizeForSettings" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/switchTimeForAnswerDetectLanguage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:checked="false"
+                    android:theme="@style/MySwitch" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#A198A2A3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/find_match"
+                    android:textColor="#A1A1A1"
+                    android:textSize="30sp"
+                    android:textStyle="italic"
+                    app:fontFamily="sans-serif-condensed-medium" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider5"
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#A198A2A3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/all_questions"
+                    android:textColor="#A1A1A1"
+                    android:textSize="@dimen/textSizeForSettings" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/switchAllQuestionsFindMatch"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:checked="false"
+                    android:theme="@style/MySwitch" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/time_for_answer"
+                    android:textColor="#A1A1A1"
+                    android:textSize="@dimen/textSizeForSettings" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/switchTimeForAnswerFindMatch"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:checked="false"
+                    android:theme="@style/MySwitch" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#A198A2A3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/shooting_in_foot"
+                    android:textColor="#A1A1A1"
+                    android:textSize="30sp"
+                    android:textStyle="italic"
+                    app:fontFamily="sans-serif-condensed-medium" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#A198A2A3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/all_questions"
+                    android:textColor="#A1A1A1"
+                    android:textSize="@dimen/textSizeForSettings" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/switchAllQuestionsShootingInFoot"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:checked="false"
+                    android:theme="@style/MySwitch" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/time_for_answer"
+                    android:textColor="#A1A1A1"
+                    android:textSize="@dimen/textSizeForSettings" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/switchTimeForAnswerShootingInFoot"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:checked="false"
+                    android:theme="@style/MySwitch" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#A198A2A3" />
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:layout_marginRight="5dp"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="2"-->
+<!--                    android:text="@string/IT_communication"-->
+<!--                    android:textSize="30sp"-->
+<!--                    android:textColor="#A1A1A1"-->
+<!--                    android:textStyle="italic"-->
+<!--                    app:fontFamily="sans-serif-condensed-medium" />-->
+<!--            </LinearLayout>-->
+
+<!--            <View-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="1.5dp"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_marginBottom="5dp"-->
+<!--                android:background="#A198A2A3" />-->
+
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:layout_marginRight="5dp"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:textColor="#A1A1A1"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:text="@string/all_questions"-->
+<!--                    android:textSize="@dimen/textSizeForSettings" />-->
+
+<!--                <androidx.appcompat.widget.SwitchCompat-->
+<!--                    android:id="@+id/switchAllQuestionsITCommunication"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="2"-->
+<!--                    android:checked="false"-->
+<!--                    android:theme="@style/MySwitch" />-->
+
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:layout_marginRight="5dp"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:textColor="#A1A1A1"-->
+<!--                    android:text="@string/time_for_answer"-->
+<!--                    android:textSize="@dimen/textSizeForSettings" />-->
+
+<!--                <androidx.appcompat.widget.SwitchCompat-->
+<!--                    android:id="@+id/switchTimeForAnswerITCommunication"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="2"-->
+<!--                    android:checked="false"-->
+<!--                    android:theme="@style/MySwitch" />-->
+<!--            </LinearLayout>-->
+
+<!--            <View-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="1.5dp"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_marginBottom="5dp"-->
+<!--                android:background="#A198A2A3" />-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/generalSettings"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/general_settings"
+                    android:textColor="#A1A1A1"
+                    android:textSize="30sp"
+                    android:textStyle="italic"
+                    app:fontFamily="sans-serif-condensed-medium" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#A198A2A3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/notificationSettings"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="#A1A1A1"
+                    android:text="@string/notification_settings"
+                    android:textSize="@dimen/textSizeForSettings" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/switchNotificationSettings"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:checked="false"
+                    android:theme="@style/MySwitch" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/SoundSettings"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="#A1A1A1"
+                    android:text="@string/sound"
+                    android:textSize="@dimen/textSizeForSettings" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/switchSoundSettings"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:checked="false"
+                    android:theme="@style/MySwitch" />
+            </LinearLayout>
+
+
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginLeft="5dp"-->
+            <!--                android:layout_marginRight="5dp"-->
+            <!--                android:orientation="horizontal">-->
+
+            <!--                <TextView-->
+            <!--                    android:id="@+id/buttonsOnMainActivity"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:layout_weight="1"-->
+            <!--                    android:text="@string/buttons_on_start_screen_settings"-->
+            <!--                    android:textSize="@dimen/textSizeForSettings" />-->
+
+            <!--                <androidx.appcompat.widget.SwitchCompat-->
+            <!--                    android:id="@+id/switchButtonsOnMainActivity"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:layout_weight="2"-->
+            <!--                    android:checked="false"-->
+            <!--                    android:theme="@style/MySwitch" />-->
+
+            <!--            </LinearLayout>-->
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginLeft="5dp"-->
+            <!--                android:layout_marginRight="5dp"-->
+            <!--                android:orientation="horizontal">-->
+
+            <!--                <TextView-->
+            <!--                    android:id="@+id/clearData"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:layout_weight="1"-->
+            <!--                    android:text="@string/clear_data_settings"-->
+            <!--                    android:textSize="@dimen/textSizeForSettings" />-->
+
+            <!--                <Button-->
+            <!--                    android:id="@+id/delete"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:layout_weight="2"-->
+            <!--                    android:drawableEnd="@drawable/png_bin"-->
+            <!--                    android:drawableRight="@drawable/png_bin"-->
+            <!--                    android:text="@string/delete" />-->
+            <!--            </LinearLayout>-->
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
